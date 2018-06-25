@@ -17,7 +17,7 @@
 #' Build the library pasting in the terminal the following string
 
 R CMD SHLIB -o 3PG src/declarations.f90 src/routines.f90 src/model.f90 src/init_model.f90 src/initbc.f90 src/changepars.f90
-#' 
+#' gfortran -shared  -fPIC -o 3PG src/declarations.f90 src/routines.f90 src/model.f90 src/init_model.f90 src/initbc.f90 src/changepars.f90
 #' 
 
 #' Load library and first model run
